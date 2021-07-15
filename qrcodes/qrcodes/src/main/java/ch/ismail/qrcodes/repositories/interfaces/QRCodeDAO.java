@@ -1,17 +1,16 @@
 package ch.ismail.qrcodes.repositories.interfaces;
 
 import ch.ismail.qrcodes.models.QRCode;
-import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
+import java.util.List;
 
-@Repository
+
 public interface QRCodeDAO {
-    ArrayList<QRCode> get();
+    List get();
 
-    QRCode get(int id);
+    QRCode get(long id);
 
     void save(QRCode qrCode);
 
-    void delete(int id);
+    void delete(long id);
 }

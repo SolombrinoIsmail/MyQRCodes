@@ -2,9 +2,12 @@ package ch.ismail.qrcodes.models;
 
 import javax.persistence.*;
 
-
+@Entity
+@Table(name = "qrcode")
 public class QRCode {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private long id;
     private String url;
 

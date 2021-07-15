@@ -9,7 +9,7 @@ public interface UserService {
 
     User get(long id);
 
-    void save(User employee);
+    void save(User user);
 
     void delete(long id);
 }

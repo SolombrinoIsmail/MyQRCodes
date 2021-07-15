@@ -7,9 +7,9 @@ import java.util.List;
 public interface QRCodeService {
     List<QRCode> get();
 
-    QRCode get(int id);
+    QRCode get(long id);
 
     void save(QRCode qrCode);
 
-    void delete(int id);
+    void delete(long id);
 }

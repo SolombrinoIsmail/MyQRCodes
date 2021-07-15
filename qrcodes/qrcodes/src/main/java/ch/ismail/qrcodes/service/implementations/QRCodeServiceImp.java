@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
-
+@Service
 public class QRCodeServiceImp implements QRCodeService {
     @Autowired
     private QRCodeDAO qrCodeDAO;
@@ -21,7 +21,7 @@ public class QRCodeServiceImp implements QRCodeService {
 
     @Transactional
     @Override
-    public QRCode get(int id) {
+    public QRCode get(long id) {
         return qrCodeDAO.get(id);
     }
 
@@ -33,7 +33,7 @@ public class QRCodeServiceImp implements QRCodeService {
 
     @Transactional
     @Override
-    public void delete(int id) {
+    public void delete(long id) {
         qrCodeDAO.delete(id);
     }
 }
