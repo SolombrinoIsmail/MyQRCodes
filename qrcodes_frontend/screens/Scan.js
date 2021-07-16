@@ -12,8 +12,9 @@ import QRCode from 'react-native-qrcode-svg';
 import {AsyncStorage} from 'react-native';
 import {render} from "react-dom";
 
+let counter = 0;
 const Scan = ({navigation}) => {
-    let counter = 0;
+
     const [hasPermission, setHasPermission] = React.useState(null);
     const [hasData, setData] = React.useState(null);
     React.useEffect(() => {
