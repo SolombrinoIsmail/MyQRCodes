@@ -10,12 +10,12 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private long id;
+    private long userID;
     private String firstname;
     private String lastname;
     private String email;
     private Date birthdate;
-    private int phonenumber;
+    private String phonenumber;
     private String password;
     private String qrcodes;
 
@@ -25,7 +25,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + userID +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
@@ -36,12 +36,12 @@ public class User {
                 '}';
     }
 
-    public long getId() {
-        return id;
+    public long getUserID() {
+        return userID;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUserID(long id) {
+        this.userID = id;
     }
 
     public String getFirstname() {
@@ -76,11 +76,11 @@ public class User {
         this.birthdate = birthdate;
     }
 
-    public int getPhonenumber() {
+    public String getPhonenumber() {
         return phonenumber;
     }
 
-    public void setPhonenumber(int phoneNumber) {
+    public void setPhonenumber(String phoneNumber) {
         this.phonenumber = phoneNumber;
     }
 
@@ -100,7 +100,7 @@ public class User {
         this.qrcodes = qrCodes;
     }
 
-    public User(String firstname, String lastname, String email, Date birthdate, int phonenumber, String password, String qrcodes) {
+    public User(String firstname, String lastname, String email, Date birthdate, String phonenumber, String password, String qrcodes) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
@@ -110,8 +110,8 @@ public class User {
         this.qrcodes = qrcodes;
     }
 
-    public User(long id, String firstname, String lastname, String email, Date birthdate, int phonenumber, String password, String qrcodes) {
-        this.id = id;
+    public User(long userID, String firstname, String lastname, String email, Date birthdate, String phonenumber, String password, String qrcodes) {
+        this.userID = userID;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;

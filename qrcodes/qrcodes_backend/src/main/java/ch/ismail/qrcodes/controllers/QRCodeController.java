@@ -1,4 +1,4 @@
-package ch.ismail.qrcodes.Controllers;
+package ch.ismail.qrcodes.controllers;
 
 import ch.ismail.qrcodes.models.QRCode;
 import ch.ismail.qrcodes.service.interfaces.QRCodeService;

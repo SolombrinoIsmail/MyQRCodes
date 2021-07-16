@@ -1,7 +1,6 @@
 package ch.ismail.qrcodes.repositories.implementations;
 
 import ch.ismail.qrcodes.models.QRCode;
-import ch.ismail.qrcodes.models.User;
 import ch.ismail.qrcodes.repositories.interfaces.QRCodeDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
